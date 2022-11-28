@@ -1,0 +1,164 @@
+html {
+  height: 2000%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /*IE and Edge*/
+  scrollbar-width: none; /*Firefox*/
+}
+.table-image {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 620px;
+  height: 300px;
+  margin-right: 92px;
+}
+
+.second-half {
+  background-color: aqua;
+}
+
+.split {
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.right {
+  right: 0;
+  width: 25%;
+  background-color: #d5006b;
+  z-index: -1;
+}
+.left {
+  left: 0;
+  width: 75%;
+  background-color: #0e0a48;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  font-weight: 400;
+  font-size: 63px;
+  position: fixed;
+  width: 700px;
+  line-height: 1.5;
+  padding: 50px 60px;
+}
+
+/*MOUSE SCROLL ANIMASYONU*/
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin: 40px;
+  bottom: 0;
+  left: 0;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+.profile {
+  width: 250px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 140px 0 140px 60px;
+}
+
+.path {
+  opacity: 0;
+}
+
+.animate {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    opacity: 0.5;
+    stroke-dashoffset: 822;
+    fill: transparent;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+    fill: black;
+  }
+}
+
+@keyframes dash {
+  0% {
+    opacity: 0.5;
+    stroke-dashoffset: 822;
+    fill: transparent;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+    fill: black;
+  }
+}

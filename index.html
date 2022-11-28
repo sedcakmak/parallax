@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;700;800&family=Libre+Baskerville:ital@1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="split left" id="left">
+    <h1>Parallax testing</h1>
+
+    <div class='icon-scroll'></div>
+  </div>
+  <div class="split right" id="right">
+    <!-- <img class="profile" src="./profile.svg"> -->
+    <svg class="profile" width="200" height="200" viewBox="0 0 251 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="path"
+        d="M221.854 97.3582L221.721 96.9063L221.262 97.013C197.193 102.604 172.003 100.888 148.916 92.083C125.828 83.2782 105.892 67.7854 91.6587 47.587L91.1334 46.8415L90.7874 47.6853C78.5861 77.4416 55.3038 101.471 25.9218 114.543L25.6794 114.651L25.6328 114.912C25 118.456 25 122.118 25 125.727V125.75C25 181.151 70.0989 226.25 125.5 226.25C180.901 226.25 226 181.151 226 125.75C226 115.824 224.492 106.277 221.854 97.3582ZM147.875 138.25C147.875 134.239 149.469 130.391 152.305 127.555C155.141 124.719 158.989 123.125 163 123.125C167.011 123.125 170.859 124.719 173.695 127.555C176.531 130.391 178.125 134.239 178.125 138.25C178.125 142.261 176.531 146.109 173.695 148.945C170.859 151.781 167.011 153.375 163 153.375C158.989 153.375 155.141 151.781 152.305 148.945C149.469 146.109 147.875 142.261 147.875 138.25ZM250 125.75V250.25H1V125.75C1 57.2761 57.0261 1.25 125.5 1.25C193.974 1.25 250 57.2761 250 125.75ZM98.695 148.945C95.8585 151.781 92.0114 153.375 88 153.375C83.9886 153.375 80.1415 151.781 77.305 148.945C74.4685 146.109 72.875 142.261 72.875 138.25C72.875 134.239 74.4685 130.391 77.305 127.555C80.1415 124.719 83.9886 123.125 88 123.125C92.0114 123.125 95.8585 124.719 98.695 127.555C101.531 130.391 103.125 134.239 103.125 138.25C103.125 142.261 101.531 146.109 98.695 148.945Z"
+        fill="transparent" stroke="black" stroke-width="1" />
+    </svg>
+
+  </div>
+  <img class="table-image" id="table" src="./table.svg">
+  <!--
+  <div class="second-half">
+    <div>
+      <h2>Testing</h2>
+      <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam,
+        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+        ipsam
+        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci
+        velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
+        ad
+        minima
+        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+        consequatur?
+        Quis
+        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+        dolorem
+        eum fugiat quo voluptas nulla pariatur?"</p>
+    </div>
+    <div class="second-haslf">
+      <h2>Testing</h2>
+      <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam,
+        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+        ipsam
+        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci
+        velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
+        ad
+        minima
+        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+        consequatur?
+        Quis
+        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+        dolorem
+        eum fugiat quo voluptas nulla pariatur?"</p>
+    </div>
+    <div class="second-halsf">
+      <h2>Testing</h2>
+      <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam,
+        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+        ipsam
+        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci
+        velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
+        ad
+        minima
+        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+        consequatur?
+        Quis
+        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+        dolorem
+        eum fugiat quo voluptas nulla pariatur?"</p>
+    </div>
+    <div class="second-hsalf">
+      <h2>Testing</h2>
+      <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam,
+        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+        ipsam
+        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci
+        velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
+        ad
+        minima
+        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+        consequatur?
+        Quis
+        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+        dolorem
+        eum fugiat quo voluptas nulla pariatur?"</p>
+    </div>
+  </div> -->
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
